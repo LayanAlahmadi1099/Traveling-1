@@ -9,8 +9,8 @@
     --grayText: rgb(190,190,190);
     --inputColor: rgb(239,239,239);
     --bodyColor: rgb(240,240,246);
-    --cardBG: rgb(239,239,239);
-    --cardHover: rgb(255,255,255);
+    --cardHover: rgb(239,239,239);
+    --cardBG: rgb(255,255,255);
 
 }
 
@@ -54,7 +54,7 @@
             box-shadow: 0 2px 4px rgba(140, 140 ,141,0.549);
             overflow: hidden;
             &:hover{
-                background: var(--cardHover);
+                background: rgb(235, 233, 233);
                 box-shadow: 1 4px 4px rgba(85, 85 ,114,0.549);
                 transform: .3s ease;
             }

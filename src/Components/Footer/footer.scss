@@ -11,7 +11,6 @@
     --bodyColor: rgb(240,240,246);
     --cardBG: rgb(255,255,235);
     --cardHover: rgb(255,255,255);
-
 }
 
 .footer{
@@ -269,6 +268,53 @@
 @media screen and (min-width: 840px){
     .footer{
         padding: 5rem;
-        
+        .secContent{
+            .footerCard{
+                flex-direction: row;
+
+                .footerLinks{
+                    grid-template-columns: repeat(3,1fr);
+                    padding-bottom: 1rem;
+
+                }
+            }
+        } 
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .footer{
+        .secContent{
+            .footerCard{
+                padding: 3rem 1rem;
+
+                .footerIntro{
+                    .footerP{
+                        font-size: 15px;
+                        color: var(--textColor);
+
+                    }
+
+                    .footerSoc{
+                        column-gap: .5rem;
+                        .icon{
+                            color: var(--textColor);
+                            font-size: 25px;
+                            &:hover {
+                                color: var(--PrimaryColor);
+                            }
+                        }
+                    }
+                }
+                .footerLinks{
+                    .linkGroup{
+                        .footerList{
+                            font-size: 16px;
+                            padding: 5px 0;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
